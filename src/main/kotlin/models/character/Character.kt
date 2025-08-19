@@ -8,6 +8,8 @@ class Character {
 
         var level: Int = 1
 
+        var race: Race? = null
+
         var skills: LinkedHashMap<String, Pair<Byte,Byte>> = linkedMapOf()
         skills["str"] = Pair(0,0)
         skills["dex"] = Pair(0,0)
@@ -27,8 +29,8 @@ class Character {
         var inventory: MutableList<Item> = mutableListOf()
 
         var equippedItems: LinkedHashMap<String, Item?> = linkedMapOf()
-        equippedItems["left_hand"] = null
-        equippedItems["right_hand"] = null
+        equippedItems["leftHand"] = null
+        equippedItems["rightHand"] = null
         equippedItems["body"] = null
 
     }
