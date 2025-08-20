@@ -1,6 +1,6 @@
 package models.character
 
-object RacialHabilities {
+object Habilities {
     val rowdy = Hability(
         "Rebeldia",
         "Humanos nunca estão satisfeitos com o estado das coisas, " +

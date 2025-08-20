@@ -6,8 +6,8 @@ object Races {
         infravision = null,
         movement = 9,
         racialHability = listOf(
-            RacialHabilities.rowdy,
-            RacialHabilities.curiosity
+            Habilities.rowdy,
+            Habilities.curiosity
         )
     )
     val elf = Race(
@@ -15,8 +15,8 @@ object Races {
         infravision = 18,
         movement = 9,
         racialHability = listOf(
-            RacialHabilities.agility,
-            RacialHabilities.longLives
+            Habilities.agility,
+            Habilities.longLives
         )
     )
     val dwarf = Race(
@@ -24,8 +24,8 @@ object Races {
         infravision = 18,
         movement = 6,
         racialHability = listOf(
-            RacialHabilities.hardShell,
-            RacialHabilities.pubBrother
+            Habilities.hardShell,
+            Habilities.pubBrother
         )
     )
 
