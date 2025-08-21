@@ -1,4 +1,4 @@
-package models.character
+package models.character.hability
 
 object Habilities {
     val rowdy = Hability(

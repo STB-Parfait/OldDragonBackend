@@ -1,4 +1,4 @@
-package models.character
+package models.character.hability
 
 data class Hability(
     val habilityName: String,

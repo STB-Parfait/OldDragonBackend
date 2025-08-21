@@ -1,13 +1,14 @@
 package models.character
 
+import models.character.race.Race
 import models.items.Item
 import kotlin.math.floor
 
 open class Character {
 
     var name: String
-    var level: Int
-    var hp: Int
+    var level: Byte
+    //HP deve depender da classe selecionada e deve ser do tipo Byte
     var xp: Int
     var race: Race?
     var skills: LinkedHashMap<String, Byte>
@@ -21,22 +22,22 @@ open class Character {
 
         level = 1
 
-        hp = 100
         xp = 0
 
         race = null
 
         skills = linkedMapOf()
-        skills["str"] = 0
-        skills["dex"] = 0
-        skills["con"] = 0
-        skills["int"] = 0
-        skills["wis"] = 0
-        skills["cha"] = 0
+        skills["str"] = 1
+        skills["dex"] = 1
+        skills["con"] = 1
+        skills["int"] = 1
+        skills["wis"] = 1
+        skills["cha"] = 1
 
         skillMod = linkedMapOf()
         for(skill in skills) {
             when{
+                skill.value <1 -> error("${skill.key} should not be less than 1")
                 skill.value in 9..12 -> skillMod[skill.key] = 0
                 skill.value >12 -> skillMod[skill.key] = floor((skill.value.toDouble()-10)/2).toInt().toByte()
                 skill.value <9 -> skillMod[skill.key] = floor((skill.value.toDouble()-10)/2).toInt().toByte()

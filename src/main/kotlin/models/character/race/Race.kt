@@ -1,4 +1,6 @@
-package models.character
+package models.character.race
+
+import models.character.hability.Hability
 
 data class Race(
     val raceName: String,
