@@ -12,13 +12,8 @@ abstract class CharacterClass(
     
     protected val dice = Dice()
     
-    fun calculateHitPoints(level: Byte, constitution: Byte): Byte {
+    fun calculateHitPoints(level: Byte, conModifier: Byte): Byte {
         var totalHP = 0
-        val conModifier = when {
-            constitution < 9 -> -1
-            constitution > 12 -> (constitution - 10) / 2
-            else -> 0
-        }
         
         // Primeiro nível sempre usa o máximo do dado
         totalHP += hitDie + conModifier

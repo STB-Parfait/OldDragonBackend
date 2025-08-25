@@ -33,7 +33,7 @@ fun main(){
             "dex" to 4,  // 8 + 4 = 12
             "con" to 3,  // 8 + 3 = 11
             "int" to 2,  // 8 + 2 = 10
-            "wis" to 8,  // 8 + 8 = 16 (atributo principal do clérigo)
+            "wis" to 8,  // 8 + 8 = 16
             "cha" to 6   // 8 + 6 = 14
             // Total: 25 pontos (dentro do limite de 27)
         )

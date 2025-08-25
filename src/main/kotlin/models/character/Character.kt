@@ -155,8 +155,8 @@ open class Character {
     
     private fun updateHitPoints() {
         characterClass?.let { charClass ->
-            val constitution = skills["con"] ?: 10
-            hp = charClass.calculateHitPoints(level, constitution)
+            val conModifier = skillMod["con"] ?: 0
+            hp = charClass.calculateHitPoints(level, conModifier)
         }
     }
     
