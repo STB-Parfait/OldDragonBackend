@@ -7,6 +7,7 @@ object Races {
         raceName = "Human",
         infravision = null,
         movement = 9,
+        preferredAlignment = Alignment.TRUE_NEUTRAL,
         racialHability = listOf(
             Habilities.rowdy,
             Habilities.curiosity
@@ -16,6 +17,7 @@ object Races {
         raceName = "Elf",
         infravision = 18,
         movement = 9,
+        preferredAlignment = Alignment.CHAOTIC_GOOD,
         racialHability = listOf(
             Habilities.agility,
             Habilities.longLives
@@ -25,6 +27,7 @@ object Races {
         raceName = "Dwarf",
         infravision = 18,
         movement = 6,
+        preferredAlignment = Alignment.LAWFUL_GOOD,
         racialHability = listOf(
             Habilities.hardShell,
             Habilities.pubBrother
